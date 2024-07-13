@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:ital,wght@0,200;0,400;1,200;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+   
+  </head>
+  <body>
+    <header class="header ">
+      <div class="nav nav-resp" >
+        <div class="logo-main">
+          <a href="./index.html"
+            ><img src="./assets/logo_main/logomain.png" alt="not found"
+          /></a>
+        </div>
+        <div class="hamb-main">
+          <div class="hamb h-resp1">
+            <div class="hb"></div>
+            <div class="hb"></div>
+            <div class="hb"></div>
+          </div>
+          
+        </div>
+        <ul class="ul-nav ul-resp">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./Gallery/gallery.html">Gallery</a></li>
+          <li><a href="./Facilities/facilities.html">Facilities</a></li>
+          <li><a href="./ContactUs/contactus.html">ContactUs</a></li>
+          <li><a href="./AboutUs/about.html">AboutUs</a></li>
+          <a href="./index.html#c-6"><button class="join-btn">Join Us</button></a>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="quote">
+          <div>Get Fit,</div>
+          <div>Get Strong,</div>
+          <div>Get Healthy!</div>
+          <p>Welcome to our fitness training program designed to <br>help you achieve your fitness goals and transform your <br>body and mind.</p>
+          <a href="./index.html#c-6">
+            <button class="btn-startnow">Start Now!</button>
+          </a>
+        </div>
+        <div class="frontimg">
+          <img src="./assets/images/frontimg.png" alt="" />
+          <img class="calo" src="./assets/images/calories.svg" alt="">
+          <img class="calo1" src="./assets/images/heart-rate.svg" alt="">
+        </div>
+      </div>
+      <div class="container2">
+        <img
+          class="personal-trainer"
+          src="./assets/images/Personal_trainer.jpg"
+          alt=""
+        />
+        <div class="about-trainer">
+          <div class="trainerfont tf1">
+            <div>EXPERT</div>
+            <div>PERSONAL</div>
+            <div>TRAINING</div>
+          </div>
+          <div class="trainerfont tf2">
+            FIT&FINE Gyms has the best personal training program in the PCMC
+            area. Our certified personal trainers are experts in their craft. We
+            create the perfect programs to help you reach your goals. Everything
+            begins with our energy and figuring out how to evolve that, then the
+            journey begins.
+          </div>
+          <button class="trainerfont tf-btn" id="showPopupBtn-coupon">GET FREE COUPON</button>
+
+          <!-- Popup window -->
+          <div id="overlay-notification"></div>
+          <div id="popup-notification">
+            <h2>Notification</h2>
+            <p>We regret to inform you that we currently do not have any active coupons available.</p>
+            <button onclick="closePopup_coupon()">Close</button>
+          </div>
+        </div>
+      </div>
+      <div class="container3">
+        <div class="why-para">
+          <div>WHY US?</div>
+          <div>Luxury Gym Experience Everyone Can Afford.</div>
+          <div><img src="./assets/Symbols/check.png" alt="Check">Super Clean</div>
+          <div><img src="./assets/Symbols/check.png" alt="Check">Friendly Staff</div>
+          <div><img src="./assets/Symbols/check.png" alt="Check">Workout & Recover</div>
+          <div><img src="./assets/Symbols/check.png" alt="Check">Motivating Atmosphere</div>
+          <a href="./index.html#c-6">
+            <button class="wh-btn">Start Your Journey</button>
+          </a>
+        </div>
+        <img class="why-img" src="./assets/images/why-img1.jpg" alt="">
+      </div>
+      <div class="container4">
+        <div class="mem-text">MEET THE TEAM</div>
+        <div class="img-team-mem">
+          <div class="img img1">
+            <img src="./assets/images/teamM0.jpg" />
+            <div class="content">
+              <div>STEVE ROGERS</div>
+              <div>Founder & Owner</div>
+            </div>
+          </div>
+          <div class="img img2">
+            <img src="./assets/images/teamM1.png" />
+            <div class="content">
+              <div>JENNIFER WALTERS</div>
+              <div>Coach</div>
+            </div>
+          </div>
+          <div class="img img3">
+            <img src="./assets/images/teamM2.png" />
+            <div class="content">
+              <div>TOM DOWNEY</div>
+              <div>Coach</div>
+            </div>
+          </div>
+          <div class="img img4">
+            <img src="./assets/images/teamM3.png" />
+            <div class="content">
+              <div>ELOISE BANKS</div>
+              <div>Coach</div>
+            </div>
+          </div>
+          <div class="img img5">
+            <img src="./assets/images/teamM4.png" />
+            <div class="content">
+              <div>HENRY JENKINS</div>
+              <div>Coach</div>
+            </div>
+          </div>
+          <div class="img img6">
+            <img src="./assets/images/teamM5.png" />
+            <div class="content">
+              <div>FRISER TILTMAN</div>
+              <div>Coach</div>
+            </div>
+          </div>
+          <div class="img img7">
+            <img src="./assets/images/teamM6.png" />
+            <div class="content">
+              <div>LOUREN RICHARDS</div>
+              <div>Coach</div>
+            </div>
+          </div>
+          <div class="img img8">
+            <img src="./assets/images/teamM7.png" />
+            <div class="content">
+              <div>KAI BECKETT</div>
+              <div>Coach</div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+
+      <div class="container5">
+        <div class="our-cl">OUR CLASSES</div>
+        <div class="class-title">
+          Fitness Classes For Every Goal
+        </div>
+        <div class="class-img-main">
+          <div class="class">
+            <div class="cl-front clf0">
+              CROSSFIT - BEGINNERS CLASS
+              <button class="openPopupBtn">Book</button>
+            </div>
+          </div>
+          <div class="class">
+            <div class="cl-front clf1">
+              CROSSFIT - MUSCLES BUILDING
+              <button class="openPopupBtn">Book</button>
+            </div>
+          </div>
+          <div class="class">
+            <div class="cl-front clf2">
+              CROSSFIT - YOGA FEMALE ONLY
+              <button class="openPopupBtn">Book</button>
+            </div>     
+          </div>
+          <div class="class">
+            <div class="cl-front clf3">
+              CROSSFIT - GYMNASTICS
+              <button class="openPopupBtn">Book</button>
+            </div> 
+          </div>
+        </div>
+
+        
+        <div id="overlay-class"></div> <!-- Background overlay -->
+
+        <div id="popupForm" class="popup-class">
+          <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Reserve Your Gym Class</h2>
+            <form id="bookingForm">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="eg: Mohammad Ansari" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91-9999999999" required>
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                  <option value="">Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="class">Class:</label>
+                <select id="class" name="class" required>
+                  <option value="">Select Class</option>
+                  <option value="BEGINNERS">CROSSFIT - BEGINNERS CLASS</option>
+                  <option value="MUSCLES">CROSSFIT - MUSCLES BUILDING</option>
+                  <option value="YOGA">CROSSFIT - YOGA FEMALE ONLY</option>
+                  <option value="GYMNASTICS">CROSSFIT - GYMNASTICS</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="date">Start Date:</label>
+                <input type="date" id="date" name="date" required>
+              </div>
+              <div class="form-group">
+                <label for="time">Time:</label>
+                <select id="time" name="time" required>
+                  <option value="">Select Time</option>
+                  <option value="t-1">7:00AM - 9:00AM</option>
+                  <option value="t-2">12:00PM - 2:00PM</option>
+                  <option value="t-3">7:00AM - 9:00AM</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="comments">Comments (optional):</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container6" id="c-6">
+
+        <div class="plan-text-main">OUR PRICING PLAN</div>
+        <div class="plan-text-sub-main">Our pricing plan comes with various membership tiers, each tailored to </div>
+        <div class="plan-text-sub-main">cater to different preferences and fitness aspirations.</div>
+        
+        
+        <div class="scroll">
+
+          <div class="container6-inside">
+  
+            <div class="plan1 invi-remove">
+              <div class="pl-text pl-t1">Basic Plan</div>
+              <div class="pl-text pl-t2">&#8377;699</div>
+              <div class="pl-text pl-t3"><span class="material-symbols-outlined">
+                check_circle
+                </span> Smart workout plan</div>
+              <div class="pl-text pl-t4"><span class="material-symbols-outlined">
+                check_circle
+                </span> At home workouts</div>
+              <button class="btn-plan openPopupBtn2">Join Now</button>
+    
+            </div>
+            <div class="plan1 ">
+              <div class="pl-text pl-t1">Monthly Plan</div>
+              <div class="pl-text pl-t2">&#8377;1299</div>
+              <div class="pl-text pl-t3"><span class="material-symbols-outlined">
+                check_circle
+                </span> <span>PRO Gyms</span></div>
+              <div class="pl-text pl-t4"><span class="material-symbols-outlined">
+                check_circle
+                </span> Smart workout plan</div>
+              <div class="pl-text pl-t4"><span class="material-symbols-outlined">
+                check_circle
+                </span> At home workouts</div>
+              <button class="btn-plan openPopupBtn2">Join Now</button>
+              
+            </div>
+            <div class="plan1 ">
+              <div class="pl-text pl-t1">Yearly Plan</div>
+              <div class="pl-text pl-t2">&#8377;8999</div>
+              <div class="pl-text pl-t3"><span class="material-symbols-outlined">
+                check_circle
+                </span> ELITE Gyms & Classes</div>
+              <div class="pl-text pl-t3"><span class="material-symbols-outlined">
+                check_circle
+                </span> <span>PRO Gyms</span></div>
+              <div class="pl-text pl-t4"><span class="material-symbols-outlined">
+                check_circle
+                </span> Smart workout plan</div>
+              <div class="pl-text pl-t4"><span class="material-symbols-outlined">
+                check_circle
+                </span> At home workouts</div>
+              <div class="pl-text pl-t4"><span class="material-symbols-outlined">
+                check_circle
+                </span> Personal Training</div>
+              <button class="btn-plan openPopupBtn2">Join Now</button>
+    
+            </div>
+
+
+            
+          </div>
+          
+          
+          
+          <!-- form for plan start -->
+
+          <div id="overlay-plan"></div>
+          <div id="popupForm2" class="popup-plan">
+            <div class="popup-content popup-content2">
+              <span class="close-plan">&times;</span>
+              <h2>PLAN SELECTION</h2>
+              <form id="bookingForm">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" placeholder="eg: Mohammad Ansari" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number:</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+91-9999999999" required>
+                </div>
+                <div class="form-group">
+                  <label for="gender">Gender:</label>
+                  <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="class">Your Plan:</label>
+                  <select id="class" name="class" required>
+                    <option value="">Select Class</option>
+                    <option value="Basic-p">BASIC PLAN</option>
+                    <option value="Monthly-p">MONTHLY PLAN</option>
+                    <option value="Yearly-p">YEARLY PLAN</option>
+                    
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="date">Start Date:</label>
+                  <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                  <label for="time">Time:</label>
+                  <select id="time" name="time" required>
+                    <option value="">Select Time</option>
+                    <option value="t-1">7:00AM - 9:00AM</option>
+                    <option value="t-2">12:00PM - 2:00PM</option>
+                    <option value="t-3">7:00AM - 9:00AM</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="comments">Comments (optional):</label>
+                  <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div> 
+          
+
+          <!-- form for plan End   --> 
+
+          <button class="slider-btn prev" >❮</button>
+          <button class="slider-btn next" >❯</button>
+        </div>
+  
+
+      </div>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="foot-colum fc1">
+              <img src="./assets/logo_main/logomain.png" alt="">
+              <div>
+                <div>Your body can stand almost anything. It's your mind you </div>
+                <div>have to convince.</div> 
+              </div>
+              <div >
+                <span class="material-symbols-outlined clock"style="font-size:34px; color:rgb(85, 1, 85);">
+                  schedule
+                  </span>
+                <div class="timing">
+                  <div><b>Monday - Friday</b></div>
+                  <div>7:00Am - 10:00Pm</div>
+                  <div><b>Saturday - Sunday</b></div>
+                  <div>7:00Am - 2:00Pm</div>
+                </div>
+              </div>
+    
+            </div>
+            <div class="foot-colum fc2">
+              <div>Our Links</div>
+              <div><a href="./index.html">Home</a></div>
+              <div><a href="./Gallery/gallery.html">Gallery</a></div>
+              <div><a href="./Facilities/facilities.html">Facilities</a></div>
+              <div><a href="./ContactUs/contactus.html">ContactUs</a></div>
+              <div><a href="./AboutUs/about.html">AboutUs</a></div>
+        
+            </div>
+            <div class="foot-colum fc3">
+              <div class="fc3-contact">Contact Us</div>
+              <div class="foot-sym">
+                <span class="material-symbols-outlined">
+                    location_on
+                </span>
+                <div>
+                  <div>Sector 29, Nigdi</div>
+                  <div> Pradhikaran, Colony, Akurdi,</div>
+                  <div>Pune, Maharashtra 411044</div>
+                </div>
+              </div>
+              <div class="foot-sym">
+                <span class="material-symbols-outlined">
+                  call
+                  </span>
+                <div>
+                  <div>+91-8928707201</div>
+                  <div>+91-8956905701</div>
+                </div>
+              </div>
+              <div class="foot-sym">
+                <span class="material-symbols-outlined">
+                  mail
+                  </span>
+                <div>
+                  <div>info@fitandfine.com</div>
+                  <div>ansari101mohammad@gmail.com</div>
+
+                </div>
+              </div>
+            </div>
+            <div class="foot-colum fc4">
+              <div>Our Newsletter</div>
+          
+              <div class="mail-e">
+                <input class="email" type="text" name="mail" id="mail" placeholder="Email Address">
+                <span class="material-symbols-outlined">
+                arrow_forward_ios</span>
+              </div>
+              <div>
+                <a href="https://twitter.com/" 
+                  class="icon-button twitter"
+                  ><i class="fab fa-twitter"></i><span></span
+                ></a>
+                <a
+                  href="https://www.facebook.com/"
+                  class="icon-button facebook"
+                  ><i class="fab fa-facebook"></i><span></span
+                ></a>
+                <a
+                  href="https://www.linkedin.com/"
+                  class="icon-button linkedin"
+                  ><i class="fab fa-linkedin"></i><span></span
+                ></a> 
+                <a href="https://github.com/" 
+                  class="icon-button github"
+                  ><i class="fab fa-github"></i><span></span
+                ></a>
+
+              </div>
+              
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

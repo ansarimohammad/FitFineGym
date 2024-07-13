@@ -1,0 +1,149 @@
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* colors define */
+:root{
+    --primarycolor : #180B1B;
+    --membership-plan:#2C0F3F;
+    --white:  #ffffff;
+    --hover: #180d1e;
+    --hover-joinbtn: #f3f3f3;
+    --button-main:#341055;
+    
+    /* font-family */
+    
+    font-family: var(--primaryfont);
+    --primaryfont: 'Poppins', sans-serif;
+    --secondaryfont: 'Baloo 2', sans-serif;
+}
+
+body{
+    /* background-color: var(--primarycolor); */
+    background: linear-gradient(304deg, #8e3bb2 -115.81%, var(--primarycolor) 100%);
+}
+
+/* navigation start  */
+/* header  */
+.header{
+    position: relative;
+    height: 8rem;
+    margin: 0 10rem;
+}
+/* logo */
+.logo-main{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.logo-main img{
+   width: 23rem;
+}
+
+/*navigation */
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+   
+
+    gap: 30%;
+    
+    
+}
+
+.nav ul{
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    margin-right: 3rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+    font-size: 1.6rem;
+    
+}
+
+.nav ul li a{
+    padding: .5rem 1rem;
+    border: .2rem solid transparent;
+    text-decoration: none;
+    color: white;
+}
+
+.join-btn{
+    font-size: 1.6rem;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: purple;
+    background: white;
+    border-radius: 1rem;
+}
+
+.nav ul li a:hover{
+    color: #a028a4;
+    /* font-weight: bold; */
+    border: .2rem solid white;
+    border-radius: 3rem;
+    padding: .5rem 1rem;
+}
+.nav ul .join-btn:hover{
+    background-color: var(--hover-joinbtn);
+    font-size: 1.8rem;
+    color: #a028a4;
+    
+}
+
+.nav ul li:nth-child(1) a{
+    color: #a028a4;
+    /* font-weight: bold; */
+    border: .2rem solid white;
+    border-radius: 3rem;
+    padding: .5rem 1rem;
+    
+}
+
+/* HAM-BURGUR  */
+
+.hamb{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+
+    display: none;
+    position: absolute;
+    top: 3rem;
+    right: 5rem;
+}
+.hb{
+    width: 4rem;
+    height: .4rem;
+    background-color: white;
+}
+.hb1{
+    width: 4rem;
+    height: .5rem;
+    background-color: white;
+    transform: rotate(315deg)translate(-7px, 7px);
+}
+.hb2{
+    width: 4rem;
+    height: .5rem;
+    background-color: white;
+    transform: rotate(45deg);
+}
+
+/* hamburger end  */
+
+/* navigation end  */
